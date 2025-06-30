@@ -81,8 +81,8 @@ function PokemonList(){
                     setPokemonListState({...pokemonListState,pokeUrl:urlToSet})
                     }}>Prev</button>
                 <button disabled={pokemonListState.nextUrl==null} onClick={()=>{
-                    const urlToSet=pokemonListState.nextUrl
-                    setPokemonListState({...pokemonListState,pokeUrl:urlToSet})
+                   // const urlToSet=pokemonListState.nextUrl
+                    setPokemonListState({...pokemonListState,pokeUrl:pokemonListState.nextUrl})
                     }}>Next</button>
             </div>
         </div>
